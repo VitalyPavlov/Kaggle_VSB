@@ -22,7 +22,7 @@ def fft_all_slices(df_, m=600, step=300):
 
 def main():
     gc.enable()
-    for label in ['test']:  # 'train', 'test'
+    for label in ['train', 'test']:  # 'train', 'test'
         meta_df = pd.read_csv(PATH + 'metadata_%s.csv' % label)
         id_signal = meta_df.signal_id.unique()
 

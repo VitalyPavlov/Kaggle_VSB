@@ -52,10 +52,11 @@ def threshold_search(y_true, y_proba):
 
 def lstm_layers(input_shape):
     inp = Input(shape=(input_shape[1], input_shape[2],))
-    x = Bidirectional(LSTM(64, return_sequences=True))(inp)
-    x = Bidirectional(LSTM(32, return_sequences=True))(x)
+
+    x = Bidirectional(LSTM(41, return_sequences=True), merge_mode='concat')(inp)
+    x = Bidirectional(LSTM(41, return_sequences=True), merge_mode='concat')(x)
     x = Attention(input_shape[1])(x)
-    x = Dense(64, activation="relu")(x)
+    x = Dense(32, activation="relu")(x)
     x = Dense(1, activation="sigmoid")(x)
     model = Model(inputs=inp, outputs=x)
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=[mcc_keras])
