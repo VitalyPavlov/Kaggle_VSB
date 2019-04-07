@@ -10,3 +10,5 @@ fft_lstm folder contains
 
 fft_stat_lstm folder contains
 1) LSTM+Attention with FFT features and LSTM+Attention with statistics from Bruno Aquino's kernel (CV 0.73, Public LB 0.65, Private LB 0.64)
+
+![LSTM+Attention with FFT features and statistics](https://drive.google.com/open?id=1J6jR6ebAKxnjLRRZ_RaZTlb0PR0CSyaB)
