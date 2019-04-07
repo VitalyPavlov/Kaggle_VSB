@@ -12,4 +12,4 @@ fft_stat_lstm folder contains
 1) LSTM+Attention with FFT features and LSTM+Attention with statistics from Bruno Aquino's kernel (CV 0.73, Public LB 0.65, Private LB 0.64)
 
 stat_lstm folder contains
-1) TCN model with time-series statistics from Bruno Aquino's kerne (CV 0.74, Public LB 0.61, Private LB 0.67)
+1) TCN model with time-series statistics from Bruno Aquino's kernel (CV 0.74, Public LB 0.61, Private LB 0.67)
