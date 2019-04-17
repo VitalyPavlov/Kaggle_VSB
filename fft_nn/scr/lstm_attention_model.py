@@ -5,7 +5,7 @@ from keras.callbacks import *
 from itertools import chain
 import tensorflow as tf
 from keras.layers import *
-from attention_layer import Attention
+from bin.attention_layer import Attention
 import gc
 
 np.random.seed(1)

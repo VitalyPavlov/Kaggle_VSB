@@ -4,7 +4,7 @@ from sklearn.model_selection import StratifiedKFold
 from keras.callbacks import *
 import tensorflow as tf
 from keras.layers import *
-from attention_layer import Attention
+from bin.attention_layer import Attention
 import gc
 
 np.random.seed(1)
